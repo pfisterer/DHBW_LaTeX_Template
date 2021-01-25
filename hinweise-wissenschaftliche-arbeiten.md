@@ -10,7 +10,7 @@ Der wissenschaftliche Anspruch an die Arbeit richtet sich nach der Art der Arbei
 
 ## Grundlegende Anforderungen
 
-Gemäß den Darlegungen in [4].
+Gemäß den Darlegungen in [3,4].
 
 - Nachweis von im Studium erworbenen Fachkenntnissen 
 - Fähigkeit zum systematischen und methodisch korrekten Bearbeiten eines begrenzten Themas 
@@ -26,26 +26,31 @@ Prinzipiell setzt sich die Gesamtnote für die schriftliche Abschlussarbeit aus 
 ### Die inhaltliche Bewertung 
 - Aufgabenstellung 
   - Ist die Aufgabenstellung verstanden worden? 
-  - Sind alle wesentlichen Aspekte erfasst worden? 
+  - Sind alle wesentlichen Aspekte der Aufgabenstellung erfasst worden? 
   - Ist der fachlich übergeordnete Zusammenhang klar? 
   - Welche Bedeutung hat das Thema in der fachlichen Domäne (Wirtschaftsinformatik, Informatik, ...)? 
-- Thematische Eingrenzung 
-  -  Hat der Autor oder die Autorin thematische Abgrenzungen vorgenommen? 
-  - Werden wichtige Aspekte ausgelassen oder nur teilweise behandelt? 
-  - Ist eine eventuelle Reduktion auf bestimmte Hauptaspekte gut begründet? 
+- Thematische Abgrenzung 
+  -  Hat der Autor / die Autorin thematische Abgrenzungen vorgenommen? 
+  - Werden die wichtigen thematischen Aspekte berücksichtigt und in der Arbeit aufgenommen? 
+  - Ist eine eventuelle Reduktion auf bestimmte thematische Hauptaspekte gut begründet? 
 - Literatur 
-  - Wird qualitativ angemessene Literatur herangezogen? 
+  - Wird die fachlich relevante Literatur vollständig und korrekt in der Arbeit berücksichtigt? 
   - In welchem Umfang wird die Literatur im Text verwendet? 
-  - Ist die Literatur korrekt ausgewertet? Z. B. ohne Verfälschungen, auf dem letzten Stand.
-  - Werden in der fachlichen Domäne anerkannte Regeln der Zitiertechnik berücksichtigt? 
+    - Sind alle benötigten Quellen im Literaturverzeichnis enthalten?
+    - Sind im Literaturverzeichnis Quellen enthalten, die nicht im Text verwendet werden?
+  - Werden diese Quellen im Text an der richtigen Stelle konsistent und in der richtigen Art und Weise zitiert?
+    - Werden insbesondere die in der fachlichen Domäne anerkannten Regeln des Zitierens in der richtigen Art und Weise angewendet? 
+  - Ist die Literatur in der Literaturangabe korrekt angegeben? 
+    - In der richtigen Darstellung, auf dem letzten Stand, alle Autoren, korrekte Angabe der Quelle/Zeitschrift/Monographie, konsistent, etc.
 - Methodik 
-  -  Welche Fachkenntnisse zeigt der Verfasser bei der Bildung eines Lösungsansatzes? 
-  - Wird die Wahl einer Methode zur Lösung der Aufgabe hinreichend begründet? 
-  - Wie wurde das Thema abgehandelt?  
+  -  Richtige Anwendung der Fachkenntnisse und Methoden bei der Findung eines Lösungsansatzes
+  - Wird die Wahl einer Methode zur Lösung der Aufgabe hinreichend begründet oder systematisch plausibel gemacht? 
+  - Wie wurde das Thema bearbeitet?  
     - empirisch/ theoretisch 
     - referierend/ vergleichend/ auswertend 
     - eigene Untersuchungen/ Erhebungen 
     - experimentell 
+    - gemischt
   - Werden eventuell durchgeführte (Computer-)Berechnungen und Abschätzungen durch Plausibilitätsuntersuchungen kontrolliert? 
 - Gliederung 
   - Ist die Gliederung inhaltlich verständlich, in Bezug auf das Thema logisch aufgebaut und aussagekräftig formuliert? 
@@ -84,7 +89,7 @@ Prinzipiell setzt sich die Gesamtnote für die schriftliche Abschlussarbeit aus 
 - Zitierweise 
   - Wird der wissenschaftliche Zitierstil korrekt und der fachlichen Domäne entsprechend angewendet? 
     - Z. B. Harvard, numerisch, alpha-numerisch, etc. in der Informatik und Wirtschaftsinformatik
-  - Ist eindeutig das übernommene und eigene Gedankengut zu erkennen? 
+  - Ist das aus fremden Quellen übernommene Wissen mit den entsprechenden Quellenangaben versehen, und ist daneben das eigene Gedankengut klar zu erkennen? 
 - Gestaltung und Inhalt 
   -  Ist eine Titelseite vorhanden und formal sowie inhaltlich korrekt dargestellt? 
   - Ist eine eidesstattliche Erklärung unterschrieben und an der korrekten Stelle der Arbeit angelegt? 
@@ -194,7 +199,7 @@ Neben administrativen und organisatorischen Aspekten werden Vorgaben zu Gliederu
 
 ### Gliederung und Inhalte der wissenschaftlichen Arbeit
 
-Gemäß der inhaltlichen und formalen Vorgaben der im Studiengang ausgehändigten Musterarbeit und unter Berücksichtigung der relevanten Informationen aus [1,2,3].
+Gemäß der inhaltlichen und formalen Vorgaben der im Studiengang ausgehändigten Musterarbeit und unter Berücksichtigung der relevanten Informationen aus [1,2].
 
 #### Gliederung 
 - Deckblatt 
@@ -349,10 +354,10 @@ Gemäß der inhaltlichen und formalen Vorgaben der im Studiengang ausgehändigte
   - auf Deutsch und ggf. auf Englisch, wenn die Arbeit auf Englisch verfasst wurde
 
 ## Literatur (Auszug)
-[1] M. Kornmeier. *Wissenschaftlich schreiben leicht gemacht: für Bachelor, Master und Dissertation*. UTB-Verlag, 4. Auflage (2011).
+[1] M. Kornmeier. *Wissenschaftlich schreiben leicht gemacht: für Bachelor, Master und Dissertation*. 4. Auflage. UTB-Verlag (2011)
 
-[2] IB DHBW Mannheim. *Leitfaden zur Gestaltung wissenschaftlicher Arbeiten (Seminar-, Projekt- und Bachelorarbeiten)*. http://www.ib.dhbw-mannheim.de/fileadmin/ms/bwl-ib/Downloads_alt/Leitfaden_31.05.pdf (2011).
+[2] M. Karmasin und R. Ribing. *Die Gestaltung wissenschaftlicher Arbeiten: Ein Leitfaden für Facharbeit/VWA, Seminararbeiten, Bachelor-, Master-, Magister- und Diplomarbeiten sowie Dissertationen*. 9. Auflage. UTB-Verlag (2017)
 
-[3] M. Karmasin und R. Ribing. *Die Gestaltung wissenschaftlicher Arbeiten: Ein Leitfaden für Facharbeit/VWA, Seminararbeiten, Bachelor-, Master-, Magister- und Diplomarbeiten sowie Dissertationen*. UTB-Verlag, 9. Auflage (2017).
+[3] N. Stranghörner. *Kriterien zur Bewertung von Diplom-, Bachelor- und Masterarbeiten*. https://www.uni-due.de/iml/07studium_abschlussarbeiten_bewertung.php
 
-[4] N. Stranghörner. *Kriterien zur Bewertung von Diplom-, Bachelor- und Masterarbeiten*. https://www.uni-due.de/iml/07studium_abschlussarbeiten_bewertung.php
+[4] B. Sandberg. *Wissenschaftliches Arbeiten von Abbildung bis Zitat: Lehr- und Übungsbuch für Bachelor, Master und Promotion*. 3. Auflage. De Gruyter Studium (2016)
