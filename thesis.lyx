@@ -1544,7 +1544,7 @@ end{acronym}
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -2365,7 +2365,7 @@ Einfügen
 \begin_inset Formula $\rightarrow$
 \end_inset
 
-Literataturverweis
+Literaturverweis
 \family default
  werden dann im Text Literaturangaben hinzugefügt, zu denen Sie jeweils
  noch Zusatzangaben wie Seitennummern oder Hinweise wie 
@@ -2974,6 +2974,28 @@ LatexCommand bibtex
 btprint "btPrintCited"
 bibfiles "bibliography"
 options "bibtotoc"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+appendix
+\backslash
+ihead{
+\backslash
+appendixname~
+\backslash
+thechapter}
+\end_layout
 
 \end_inset
 
