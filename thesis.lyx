@@ -1606,7 +1606,7 @@ acs{DHBW})
 status collapsed
 
 \begin_layout Plain Layout
-Hier musste das Acronym per Hand ausführlich geschrieben werden, da es sonst
+Hier musste das Akronym per Hand ausführlich geschrieben werden, da es sonst
  sprachlich unpassend 
 \begin_inset Quotes gld
 \end_inset
@@ -2046,7 +2046,7 @@ ac{WYSIWYM}
 \end_inset
 
  Prinzip versucht der Editor nicht das resultierende Dokument auf einem
- Bildschirm darzustellen, sondern ermöglicht eine möglicht sinnvolle und
+ Bildschirm darzustellen, sondern ermöglicht eine möglichst sinnvolle und
  pragmatische Darstellung der eigentlichen Inhalte.
  Abbildung
 \begin_inset space ~
@@ -2067,8 +2067,8 @@ noprefix "false"
 n werden können.
  Obwohl die Oberfläche graphisch orientiert ist, bleiben auch alle \SpecialChar LaTeX
 -Kommandos
- zugängig, wodurch die ursprüngliche Mächtigkeit des unterliegenden Textsatzsyst
-ems erhalten wird.
+ zugänglich, wodurch die ursprüngliche Mächtigkeit des unterliegenden Textsatzsy
+stems erhalten wird.
 \end_layout
 
 \begin_layout Standard
@@ -2357,7 +2357,7 @@ Im Dokument
 \family typewriter
 bibliography.bib
 \family default
- verzeichnen Sie die Quellen samt biographischer Daten, die Sie im Dokument
+ verzeichnen Sie die Quellen samt bibliographischer Daten, die Sie im Dokument
  zitieren möchten.
  Durch Aufruf der Menü-Funktion 
 \family typewriter
@@ -2389,7 +2389,7 @@ Siehe
  in der Arbeit selbst belegt oder in einer referenzierten oder zitierten
  Quellen nachgewiesen sein.
  Der Großteil Ihrer Quellen sollten daher im Unterschied zu diesem Beispieltext
- aus Lehrbüchern, rennomierten Referenzen oder wissenschaftlichen Artikeln
+ aus Lehrbüchern, renommierten Referenzen oder wissenschaftlichen Artikeln
  bestehen.
 \end_layout
 
@@ -2785,7 +2785,7 @@ Algorithmen
 Sie können viele weitere \SpecialChar LaTeX
 -Pakete wie 
 \family typewriter
-algorithmix
+algorithms
 \family default
  verwenden, wie beispielsweise zur Darstellung von Algorithmen durch Pseudocode.
  Dies ist entsprechend der Dokumentation des Pakets möglich und Sie können
@@ -2928,15 +2928,30 @@ end{algorithmic}
 
 \backslash
 caption{Euklid'scher Algorithmus}
-\backslash
-label{alg:euclid}
 \end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "alg:euclid"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
 
 
 \backslash
 end{algorithm}
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
