@@ -26,18 +26,116 @@
 \documentclass[fontsize=12pt,BCOR=5mm,DIV=12,parskip=half,listof=totoc,
                paper=a4,toc=bibliography,pointlessnumbers]{scrreprt}
                
-               %toc=listof,listof=entryprefix,
-               
+\usepackage[utf8]{inputenc}
+
+%% LANGUAGE SETTINGS
+%
+% @stud: Sprache ggf. anpassen
+%
+%\usepackage[ngerman]{babel} 	        % german language
+%\usepackage[german=quotes]{csquotes} 	% correct quoting using \enquote{}
+\usepackage[english]{babel}          % english language
+\usepackage{csquotes} 	              % correct quoting using \enquote{}
+
+%%%%%%%%%%%%%
+%% ZITIERSTIL
+%%%%%%%%%%%%%
+%
+% @stud: Zitierstil in package biblatex unten wählen
+%
+% NUMERIC Style - e. g. [12]
+% style=numeric 
+%
+% IEEE Style - numeric kind of style 
+% style=ieee 
+%
+% ALPHABETIC Style - e. g. [AB12]
+% style=alphabetic 
+%
+% HARVARD Style 
+% style=apa 
+%
+% CHICAGO Style 
+% style=authoryear
+%
+% Position des Zitats:
+%
+% autocite=inline 
+%
+% (!!) FOOTNOTE POSITION NOT RECOMMENDED IN MINT DOMAIN:
+% autocite=footnote
+%
+\usepackage[backend=biber, autocite=inline, style=numeric]{biblatex} 	
+\usepackage{makeidx}                  % allows index generation
+\usepackage{listings}	                %Format Listings properly
+\usepackage{lipsum}                   % Blindtext
+\usepackage{graphicx}                 % use various graphics formats
+\usepackage[german]{varioref}         % nicer references \vref
+\usepackage{caption}	                % better Captions
+\usepackage{booktabs}                 % nicer Tabs
+\usepackage[hidelinks=true]{hyperref} % keine roten Markierungen bei Links
+\usepackage{fnpct}                    % Correct superscripts 
+\usepackage{calc}                     % Used for extra space below footsepline, in particular
+\usepackage{array}
+\usepackage{acronym}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{setspace}
+\usepackage{tocloft}
+\usepackage[T1]{fontenc}
+
+% Definitionen und Commands
+\newcommand{\indextype}{numeric}
+\newcommand{\abs}{\par\vskip 0.2cm\goodbreak\noindent}
+\newcommand{\nl}{\par\noindent}
+\newcommand{\mcl}[1]{\mathcal{#1}}
+\newcommand{\nowrite}[1]{}
+\newcommand{\NN}{{\mathbb N}}
+\newcommand{\imagedir}{img}
+\newcommand{\TitelDerArbeit}[1]{\def\DerTitelDerArbeit{#1}\hypersetup{pdftitle={#1}}}
+\newcommand{\AutorDerArbeit}[1]{\def\DerAutorDerArbeit{#1}\hypersetup{pdfauthor={#1}}}
+\newcommand{\Firma}[1]{\def\DerNameDerFirma{#1}}
+\newcommand{\Kurs}[1]{\def\DieKursbezeichnung{#1}}
+\newcommand{\Abteilung}[1]{\def\DerNameDerAbteilung{#1}}
+\newcommand{\Studiengangsleiter}[1]{\def\DerStudiengangsleiter{#1}}
+\newcommand{\WissBetreuer}[1]{\def\DerWissBetreuer{#1}}
+\newcommand{\FirmenBetreuer}[1]{\def\DerFirmenBetreuer{#1}}
+\newcommand{\Bearbeitungszeitraum}[1]{\def\DerBearbeitungszeitraum{#1}}
+\newcommand{\Abgabedatum}[1]{\def\DasAbgabedatum{#1}}
+\newcommand{\Matrikelnummer}[1]{\def\DieMatrikelnummer{#1}}
+\newcommand{\Studienrichtung}[1]{\def\DieStudienrichtung{#1}}
+\newcommand{\ArtDerArbeit}[1]{\def\DieArtDerArbeit{#1}}
+\newcommand{\Literaturverzeichnis}{Literaturverzeichnis}
+
+% Page Layout
+\oddsidemargin=0mm
+\evensidemargin=0mm
+\textwidth=159mm
+\topmargin=-18mm
+\headsep=10mm
+\textheight=251mm
+\footheight=15mm
+
 \makeindex
 
-%% Elementare Pakete, Konfigurationen und Definitionen werden geladen (gegebenenfalls anpassen)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LITERATURVERZEICHNIS
+% @stud: Literaturverzeichnis in Datei bibliography.bib anpassen. 
+%
+% [Alternative zu Verwendung von \initializeBibliography: Citavi ... (dazu eigenes LaTex Coding verwenden)]
+%
+\addbibresource{bibliography.bib}
+\DefineBibliographyStrings{ngerman}{andothers = {{et\,al\adddot}},}
+
+% Elementare Konfigurationen und Definitionen werden geladen 
+% @stud: gegebenenfalls anpassen
+%
 \input{config}
 
-%%
-%% @stud
-%%
-%% PERSÖNLICHE ANGABEN (BITTE VOLLSTÄNDIG EINGEBEN zwischen den Klammern: {...})
-%%
+% @stud
+%
+% PERSÖNLICHE ANGABEN (BITTE VOLLSTÄNDIG EINGEBEN zwischen den Klammern: {...})
+%
 \ArtDerArbeit{<Bachelor>/<Projekt>} % "Bachelor" oder "Projekt" wählen
 \TitelDerArbeit{<Titel Ihrer Arbeit>}
 \AutorDerArbeit{<Ihr Vor- und Nachname>}
@@ -51,60 +149,6 @@
 \FirmenBetreuer{<Ihr(e) Firmenbetreuer(in)>}
 \Bearbeitungszeitraum{dd.mm.yyyy -- DD.MM.YYYY}
 \Abgabedatum{dd.mm.yyyy}
-
-%%
-%% @stud
-%%
-%% BIBLIOGRAPHY (@stud: Bibliographie-Stil wählen - Position und Indizierung)
-%%  Auswahl zwischen: 
-%%   NUMERIC Style
-%%   IEEE Style
-%%   ALPHABETIC Style
-%%   HARVARD Style
-%%   CHICAGO Style 
-%%   (oder eigenen zulässigen Stil wählen) 
-%%
-%%%%%%%%%%%%%
-%% Zitierstil
-%%%%%%%%%%%%%
-% NUMERIC Style - e. g. [12]
-%\newcommand{\indextype}{numeric} 
-%
-% IEEE Style - numeric kind of style 
-%\newcommand{\indextype}{ieee} 
-%
-% ALPHABETIC Style - e. g. [AB12]
-\newcommand{\indextype}{alphabetic} 
-%
-% HARVARD Style 
-%\newcommand{\indextype}{apa} 
-%
-% CHICAGO Style 
-%\newcommand{\indextype}{authoryear}
-%
-%%%%%%%%%%%%%%%%%%%%%%
-%% Position des Zitats
-%%%%%%%%%%%%%%%%%%%%%%
-\newcommand{\position}{inline} 
-%
-% (!!) FOOTNOTE POSITION NOT RECOMMENDED IN MINT DOMAIN:
-%\newcommand{\position}{footnote}
-
-%% Final: Setzen des Zitierstils und der Zitatposition
-\usepackage[backend=biber, autocite=\position, style=\indextype]{biblatex} 	
-\settingBibFootnoteCite
-
-%%
-%% Definitionen und Commands
-%%
-\newcommand{\abs}{\par\vskip 0.2cm\goodbreak\noindent}
-\newcommand{\nl}{\par\noindent}
-\newcommand{\mcl}[1]{\mathcal{#1}}
-\newcommand{\nowrite}[1]{}
-\newcommand{\NN}{{\mathbb N}}
-\newcommand{\imagedir}{img}
-
-\makeindex
 
 \begin{document}
 
@@ -170,10 +214,14 @@
 \input{acronyms} 
 \cleardoublepage
 
+\onehalfspacing
+
 %	Kurzfassung / Abstract
 % @stud: abstract.tex bearbeiten
 \input{abstract} 
 \cleardoublepage
+
+\initializeText
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % KAPITEL UND ANHÄNGE
@@ -182,9 +230,6 @@
 %   - nicht benötigte: auskommentieren/löschen
 %   - neue: bei Bedarf hinzufügen mittels input-Kommando an entsprechender Stelle einfügen
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\initializeText
-\onehalfspacing
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % KAPITEL
@@ -215,14 +260,12 @@
 
 \singlespacing
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% LITERATURVERZEICHNIS
-% @stud: Literaturverzeichnis in Datei bibliography.bib anpassen. 
-%
-% Alternative zu Verwendung von \initializeBibliography: Citavi ...
-% (dann \initializeBibliography auskommentieren und eigenes LaTex Coding verwenden)
-%
-\initializeBibliography
+%\ihead{}
+%\printbibliography[title=\Literaturverzeichnis] 
+\printbibliography 
+\cleardoublepage
+
+%\initializeBibliography
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
