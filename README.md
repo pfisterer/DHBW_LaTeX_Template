@@ -55,7 +55,7 @@ The GitHub bundle contains sample chapter and appendix files which may be adapte
 If you want to use a logo of your company replace the graphics file **`firmenlogo.jpg`** in folder `./img` by the logo of your company. Adjust the size of the logo by setting the scale factor of the image in **`titlepage.tex`**.
 
 **Remark**
-* The file **`master.tex`** will be used for the preparation of scientific theses
+* The template **`master.tex`** will be used for the preparation of scientific theses
 * Templates for other kinds of scientific papers, articles, monographs, etc. can be found in repositories of scientific journals or for instance here:
   * https://www.latextemplates.com/
   * https://www.overleaf.com/latex/templates
