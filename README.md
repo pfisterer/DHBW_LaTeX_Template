@@ -54,6 +54,13 @@ The GitHub bundle contains sample chapter and appendix files which may be adapte
 
 If you want to use a logo of your company replace the graphics file **`firmenlogo.jpg`** in folder `./img` by the logo of your company. Adjust the size of the logo by setting the scale factor of the image in **`titlepage.tex`**.
 
+**Remark**
+* The file ''master.tex'' is intended for the preparation of scientific theses
+* Templates for other kinds of scientific papers, articles, monographs, etc. can be found here:
+** https://www.latextemplates.com/
+** https://www.overleaf.com/latex/templates
+** https://github.com/pmichaillat/latex-paper
+
 ## Explanation of the LyX template
 
 For editing via the LyX graphical editor see the **`thesis.lyx`** template file in the LyX directory, which includes the acronyms and configs of above LaTeX template in the document and settings. 
